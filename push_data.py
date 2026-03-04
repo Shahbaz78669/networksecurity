@@ -28,7 +28,7 @@ class ExtractData:
         try:
             data=pd.read_csv(file_path)
             data.reset_index(drop=True,inplace=True)
-            records=list(json.loads(data.T.to_json()).values())
+            records = data.to_dict(orient='records')
             return records
         except Exception as e:
             raise NetworkSecurityException(e,sys)
