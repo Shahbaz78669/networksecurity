@@ -1,0 +1,64 @@
+ 
+columns:
+  - name: having_IP_Address
+    type: int64
+  - name: URL_Length
+    type: int64
+  - name: Shortining_Service
+    type: int64
+  - name: having_At_Symbol
+    type: int64
+  - name: double_slash_redirecting
+    type: int64
+  - name: Prefix_Suffix
+    type: int64
+  - name: having_Sub_Domain
+    type: int64
+  - name: SSLfinal_State
+    type: int64
+  - name: Domain_registeration_length
+    type: int64
+  - name: Favicon
+    type: int64
+  - name: port
+    type: int64
+  - name: HTTPS_token
+    type: int64
+  - name: Request_URL
+    type: int64
+  - name: URL_of_Anchor
+    type: int64
+  - name: Links_in_tags
+    type: int64
+  - name: SFH
+    type: int64
+  - name: Submitting_to_email
+    type: int64
+  - name: Abnormal_URL
+    type: int64
+  - name: Redirect
+    type: int64
+  - name: on_mouseover
+    type: int64
+  - name: RightClick
+    type: int64
+  - name: popUpWidnow
+    type: int64
+  - name: Iframe
+    type: int64
+  - name: age_of_domain
+    type: int64
+  - name: DNSRecord
+    type: int64
+  - name: web_traffic
+    type: int64
+  - name: Page_Rank
+    type: int64
+  - name: Google_Index
+    type: int64
+  - name: Links_pointing_to_page
+    type: int64
+  - name: Statistical_report
+    type: int64
+  - name: Result
+    type: int64
