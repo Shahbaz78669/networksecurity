@@ -1,0 +1,23 @@
+[ 2026-03-29 13:31:31,388 ] INFO - root - Initiate data Ingestion
+[ 2026-03-29 13:31:47,461 ] INFO - root - Performing train test split on the dataframe
+[ 2026-03-29 13:31:47,461 ] INFO - root - Exited split_data_as_train_test method of Data_ingestion class
+[ 2026-03-29 13:31:47,461 ] INFO - root - Exporting train and test file path.
+[ 2026-03-29 13:31:47,524 ] INFO - root - Data Initiation Completed
+[ 2026-03-29 13:31:47,544 ] INFO - root - Initiate the data validation
+[ 2026-03-29 13:31:47,574 ] INFO - root - Required number of columns: 1
+[ 2026-03-29 13:31:47,574 ] INFO - root - Data frame has columns:32
+[ 2026-03-29 13:31:47,574 ] INFO - root - Required number of columns: 1
+[ 2026-03-29 13:31:47,574 ] INFO - root - Data frame has columns:32
+[ 2026-03-29 13:31:47,748 ] INFO - root - data Validation COmpleted
+[ 2026-03-29 13:31:47,748 ] INFO - root - Data transformation started
+[ 2026-03-29 13:31:47,748 ] INFO - root - Entered initiate_data_transformation method of DataTransformation class
+[ 2026-03-29 13:31:47,748 ] INFO - root - Starting data Transformation
+[ 2026-03-29 13:31:47,787 ] INFO - root -  Entered get_data_transformer_object method of Transformation class
+[ 2026-03-29 13:31:47,813 ] INFO - root - Entered the save_object method of mainutils class
+[ 2026-03-29 13:31:47,818 ] INFO - root - Exited the save_object method of mainutils class 
+[ 2026-03-29 13:31:47,821 ] INFO - root - Data transformation completed
+[ 2026-03-29 13:31:47,821 ] INFO - root - Model Trianer started
+[ 2026-03-29 13:32:18,874 ] INFO - root - Entered the save_object method of mainutils class
+[ 2026-03-29 13:32:18,886 ] INFO - root - Exited the save_object method of mainutils class 
+[ 2026-03-29 13:32:18,886 ] INFO - root - Model trainer artifact:ModelTrainerArtifact(trianed_model_file_path='Artifacts\\03_29_2026_13_31_28\\modle_trainer\\trained_model\\model.pkl', train_metric_artifact=ClassficationMetricArtifact(f1_score=1.0, precision_score=1.0, recall_score=1.0), test_metric_artifact=ClassficationMetricArtifact(f1_score=0.9714285714285714, precision_score=0.9718196457326892, recall_score=0.9710378117457763))
+[ 2026-03-29 13:32:18,888 ] INFO - root - Model Training artifact created
