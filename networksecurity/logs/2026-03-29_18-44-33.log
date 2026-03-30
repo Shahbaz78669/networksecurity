@@ -1,0 +1,31 @@
+[ 2026-03-29 18:45:10,689 ] INFO - httpx - HTTP Request: POST https://dagshub.com/login/oauth/middleman "HTTP/1.1 200 OK"
+[ 2026-03-29 18:45:12,524 ] INFO - httpx - HTTP Request: POST https://dagshub.com/login/oauth/access_token "HTTP/1.1 200 OK"
+[ 2026-03-29 18:45:13,613 ] INFO - httpx - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[ 2026-03-29 18:45:13,622 ] INFO - dagshub - Accessing as Shahbaz78669
+[ 2026-03-29 18:45:14,828 ] INFO - httpx - HTTP Request: GET https://dagshub.com/api/v1/repos/Shahbaz78669/networksecurity "HTTP/1.1 200 OK"
+[ 2026-03-29 18:45:17,056 ] INFO - httpx - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[ 2026-03-29 18:45:17,058 ] INFO - dagshub - Initialized MLflow to track repo "Shahbaz78669/networksecurity"
+[ 2026-03-29 18:45:17,064 ] INFO - dagshub - Repository Shahbaz78669/networksecurity initialized!
+[ 2026-03-29 18:45:17,065 ] INFO - root - Initiate data Ingestion
+[ 2026-03-29 18:45:31,773 ] INFO - root - Performing train test split on the dataframe
+[ 2026-03-29 18:45:31,780 ] INFO - root - Exited split_data_as_train_test method of Data_ingestion class
+[ 2026-03-29 18:45:31,780 ] INFO - root - Exporting train and test file path.
+[ 2026-03-29 18:45:31,818 ] INFO - root - Data Initiation Completed
+[ 2026-03-29 18:45:31,828 ] INFO - root - Initiate the data validation
+[ 2026-03-29 18:45:31,858 ] INFO - root - Required number of columns: 1
+[ 2026-03-29 18:45:31,858 ] INFO - root - Data frame has columns:32
+[ 2026-03-29 18:45:31,858 ] INFO - root - Required number of columns: 1
+[ 2026-03-29 18:45:31,858 ] INFO - root - Data frame has columns:32
+[ 2026-03-29 18:45:31,964 ] INFO - root - data Validation COmpleted
+[ 2026-03-29 18:45:31,964 ] INFO - root - Data transformation started
+[ 2026-03-29 18:45:31,964 ] INFO - root - Entered initiate_data_transformation method of DataTransformation class
+[ 2026-03-29 18:45:31,964 ] INFO - root - Starting data Transformation
+[ 2026-03-29 18:45:31,988 ] INFO - root -  Entered get_data_transformer_object method of Transformation class
+[ 2026-03-29 18:45:32,008 ] INFO - root - Entered the save_object method of mainutils class
+[ 2026-03-29 18:45:32,016 ] INFO - root - Exited the save_object method of mainutils class 
+[ 2026-03-29 18:45:32,018 ] INFO - root - Data transformation completed
+[ 2026-03-29 18:45:32,018 ] INFO - root - Model Trianer started
+[ 2026-03-29 18:46:14,430 ] INFO - root - Entered the save_object method of mainutils class
+[ 2026-03-29 18:46:14,443 ] INFO - root - Exited the save_object method of mainutils class 
+[ 2026-03-29 18:46:14,445 ] INFO - root - Model trainer artifact:ModelTrainerArtifact(trianed_model_file_path='Artifacts\\03_29_2026_18_44_34\\modle_trainer\\trained_model\\model.pkl', train_metric_artifact=ClassficationMetricArtifact(f1_score=0.9998988570850612, precision_score=1.0, recall_score=0.9997977346278317), test_metric_artifact=ClassficationMetricArtifact(f1_score=0.9684037751333607, precision_score=0.9640522875816994, recall_score=0.9727947238252267))
+[ 2026-03-29 18:46:14,446 ] INFO - root - Model Training artifact created

@@ -1,0 +1,24 @@
+[ 2026-03-29 18:55:57,466 ] INFO - httpx - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[ 2026-03-29 18:55:57,477 ] INFO - dagshub - Accessing as Shahbaz78669
+[ 2026-03-29 18:55:59,134 ] INFO - httpx - HTTP Request: GET https://dagshub.com/api/v1/repos/Shahbaz78669/networksecurity "HTTP/1.1 200 OK"
+[ 2026-03-29 18:56:00,059 ] INFO - httpx - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[ 2026-03-29 18:56:00,062 ] INFO - dagshub - Initialized MLflow to track repo "Shahbaz78669/networksecurity"
+[ 2026-03-29 18:56:00,063 ] INFO - dagshub - Repository Shahbaz78669/networksecurity initialized!
+[ 2026-03-29 18:56:00,064 ] INFO - root - Initiate data Ingestion
+[ 2026-03-29 18:56:16,967 ] INFO - root - Performing train test split on the dataframe
+[ 2026-03-29 18:56:16,968 ] INFO - root - Exited split_data_as_train_test method of Data_ingestion class
+[ 2026-03-29 18:56:16,969 ] INFO - root - Exporting train and test file path.
+[ 2026-03-29 18:56:17,018 ] INFO - root - Data Initiation Completed
+[ 2026-03-29 18:56:17,024 ] INFO - root - Initiate the data validation
+[ 2026-03-29 18:56:17,048 ] INFO - root - Required number of columns: 1
+[ 2026-03-29 18:56:17,048 ] INFO - root - Data frame has columns:32
+[ 2026-03-29 18:56:17,048 ] INFO - root - Required number of columns: 1
+[ 2026-03-29 18:56:17,048 ] INFO - root - Data frame has columns:32
+[ 2026-03-29 18:56:17,157 ] INFO - root - data Validation COmpleted
+[ 2026-03-29 18:56:17,157 ] INFO - root - Data transformation started
+[ 2026-03-29 18:56:17,157 ] INFO - root - Entered initiate_data_transformation method of DataTransformation class
+[ 2026-03-29 18:56:17,157 ] INFO - root - Starting data Transformation
+[ 2026-03-29 18:56:17,220 ] INFO - root -  Entered get_data_transformer_object method of Transformation class
+[ 2026-03-29 18:56:17,242 ] INFO - root - Entered the save_object method of mainutils class
+[ 2026-03-29 18:56:17,248 ] INFO - root - Exited the save_object method of mainutils class 
+[ 2026-03-29 18:56:17,248 ] INFO - root - Entered the save_object method of mainutils class
