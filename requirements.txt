@@ -9,5 +9,9 @@ scikit-learn
 mlflow
 pyaml
 dagshub
+fastapi
+uvicorn
+fastapi
+python-multipart
 
 # -e .

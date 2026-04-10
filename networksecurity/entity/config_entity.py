@@ -11,7 +11,9 @@ class TrainingPipelineConfig:
         self.artifact_name = training_pipeline.ARTIFACT_DIR
         self.artifact_dir = os.path.join(self.artifact_name, self.timestamp)
 
+'''It defines where to pull data from (MongoDB database_name and collection_name) and where to store the raw and split data (feature_store_file_path, training_file_path, testing_file_path).
 
+Key Parameter: It holds the train_test_split_ratio (defaulting to 0.2 from constants). '''
 class DataIngestionConfig:
     def __init__(self, training_pipeline_config: TrainingPipelineConfig):
         self.data_ingestion_dir: str = os.path.join(

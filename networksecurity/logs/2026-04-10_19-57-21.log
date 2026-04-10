@@ -1,0 +1,30 @@
+[ 2026-04-10 19:57:24,827 ] INFO - httpx - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[ 2026-04-10 19:57:24,847 ] INFO - dagshub - Accessing as Shahbaz78669
+[ 2026-04-10 19:57:27,270 ] INFO - httpx - HTTP Request: GET https://dagshub.com/api/v1/repos/Shahbaz78669/networksecurity "HTTP/1.1 200 OK"
+[ 2026-04-10 19:57:28,523 ] INFO - httpx - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[ 2026-04-10 19:57:28,528 ] INFO - dagshub - Initialized MLflow to track repo "Shahbaz78669/networksecurity"
+[ 2026-04-10 19:57:28,540 ] INFO - dagshub - Repository Shahbaz78669/networksecurity initialized!
+[ 2026-04-10 19:57:34,629 ] INFO - root - Data Ingestion started
+[ 2026-04-10 19:57:51,115 ] INFO - root - Performing train test split on the dataframe
+[ 2026-04-10 19:57:51,123 ] INFO - root - Exited split_data_as_train_test method of Data_ingestion class
+[ 2026-04-10 19:57:51,123 ] INFO - root - Exporting train and test file path.
+[ 2026-04-10 19:57:51,264 ] INFO - root - Data ingestion completed, DataIngestionArtifact(trained_file_path='Artifacts\\04_10_2026_19_57_21\\data_ingestion\\ingested\\train.csv', test_file_path='Artifacts\\04_10_2026_19_57_21\\data_ingestion\\ingested\\test.csv')
+[ 2026-04-10 19:57:51,283 ] INFO - root - Initiate the data validation
+[ 2026-04-10 19:57:51,339 ] INFO - root - Required number of columns: 1
+[ 2026-04-10 19:57:51,339 ] INFO - root - Data frame has columns:32
+[ 2026-04-10 19:57:51,340 ] INFO - root - Required number of columns: 1
+[ 2026-04-10 19:57:51,340 ] INFO - root - Data frame has columns:32
+[ 2026-04-10 19:57:51,889 ] INFO - root - Entered initiate_data_transformation method of DataTransformation class
+[ 2026-04-10 19:57:51,889 ] INFO - root - Starting data Transformation
+[ 2026-04-10 19:57:51,933 ] INFO - root -  Entered get_data_transformer_object method of Transformation class
+[ 2026-04-10 19:57:51,958 ] INFO - root - Entered the save_object method of mainutils class
+[ 2026-04-10 19:57:51,968 ] INFO - root - Exited the save_object method of mainutils class 
+[ 2026-04-10 19:57:51,968 ] INFO - root - Entered the save_object method of mainutils class
+[ 2026-04-10 19:57:51,972 ] INFO - root - Exited the save_object method of mainutils class 
+[ 2026-04-10 19:59:31,775 ] INFO - root - Entered the save_object method of mainutils class
+[ 2026-04-10 19:59:31,852 ] INFO - root - Exited the save_object method of mainutils class 
+[ 2026-04-10 19:59:31,852 ] INFO - root - Entered the save_object method of mainutils class
+[ 2026-04-10 19:59:31,919 ] INFO - root - Exited the save_object method of mainutils class 
+[ 2026-04-10 19:59:31,920 ] INFO - root - Model trainer artifact:ModelTrainerArtifact(trianed_model_file_path='Artifacts\\04_10_2026_19_57_21\\modle_trainer\\trained_model\\model.pkl', train_metric_artifact=ClassficationMetricArtifact(f1_score=1.0, precision_score=1.0, recall_score=1.0), test_metric_artifact=ClassficationMetricArtifact(f1_score=0.9716792979656961, precision_score=0.9666666666666667, recall_score=0.9767441860465116))
+[ 2026-04-10 19:59:58,791 ] INFO - root - File loaded. Original Shape: (12, 30)
+[ 2026-04-10 19:59:58,914 ] INFO - root - Dummy 'id' column added for schema alignment.

@@ -1,0 +1,12 @@
+[ 2026-04-10 00:25:27,950 ] INFO - httpx - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[ 2026-04-10 00:25:27,968 ] INFO - dagshub - Accessing as Shahbaz78669
+[ 2026-04-10 00:25:28,412 ] INFO - httpx - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[ 2026-04-10 00:25:28,423 ] INFO - dagshub - Accessing as Shahbaz78669
+[ 2026-04-10 00:25:29,111 ] INFO - httpx - HTTP Request: GET https://dagshub.com/api/v1/repos/Shahbaz78669/networksecurity "HTTP/1.1 200 OK"
+[ 2026-04-10 00:25:29,409 ] INFO - httpx - HTTP Request: GET https://dagshub.com/api/v1/repos/Shahbaz78669/networksecurity "HTTP/1.1 200 OK"
+[ 2026-04-10 00:25:30,151 ] INFO - httpx - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[ 2026-04-10 00:25:30,158 ] INFO - dagshub - Initialized MLflow to track repo "Shahbaz78669/networksecurity"
+[ 2026-04-10 00:25:30,158 ] INFO - dagshub - Repository Shahbaz78669/networksecurity initialized!
+[ 2026-04-10 00:25:30,402 ] INFO - httpx - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[ 2026-04-10 00:25:30,403 ] INFO - dagshub - Initialized MLflow to track repo "Shahbaz78669/networksecurity"
+[ 2026-04-10 00:25:30,405 ] INFO - dagshub - Repository Shahbaz78669/networksecurity initialized!

@@ -1,0 +1,33 @@
+[ 2026-04-03 18:26:24,401 ] INFO - httpx - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[ 2026-04-03 18:26:24,409 ] INFO - dagshub - Accessing as Shahbaz78669
+[ 2026-04-03 18:26:25,094 ] INFO - httpx - HTTP Request: GET https://dagshub.com/api/v1/repos/Shahbaz78669/networksecurity "HTTP/1.1 200 OK"
+[ 2026-04-03 18:26:27,079 ] INFO - httpx - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[ 2026-04-03 18:26:27,084 ] INFO - dagshub - Initialized MLflow to track repo "Shahbaz78669/networksecurity"
+[ 2026-04-03 18:26:27,085 ] INFO - dagshub - Repository Shahbaz78669/networksecurity initialized!
+[ 2026-04-03 18:26:27,085 ] INFO - root - Initiate data Ingestion
+[ 2026-04-03 18:26:44,357 ] INFO - root - Performing train test split on the dataframe
+[ 2026-04-03 18:26:44,365 ] INFO - root - Exited split_data_as_train_test method of Data_ingestion class
+[ 2026-04-03 18:26:44,365 ] INFO - root - Exporting train and test file path.
+[ 2026-04-03 18:26:44,408 ] INFO - root - Data Initiation Completed
+[ 2026-04-03 18:26:44,409 ] INFO - root - Initiate the data validation
+[ 2026-04-03 18:26:44,431 ] INFO - root - Required number of columns: 1
+[ 2026-04-03 18:26:44,434 ] INFO - root - Data frame has columns:32
+[ 2026-04-03 18:26:44,434 ] INFO - root - Required number of columns: 1
+[ 2026-04-03 18:26:44,434 ] INFO - root - Data frame has columns:32
+[ 2026-04-03 18:26:44,549 ] INFO - root - data Validation COmpleted
+[ 2026-04-03 18:26:44,549 ] INFO - root - Data transformation started
+[ 2026-04-03 18:26:44,549 ] INFO - root - Entered initiate_data_transformation method of DataTransformation class
+[ 2026-04-03 18:26:44,549 ] INFO - root - Starting data Transformation
+[ 2026-04-03 18:26:44,565 ] INFO - root -  Entered get_data_transformer_object method of Transformation class
+[ 2026-04-03 18:26:44,578 ] INFO - root - Entered the save_object method of mainutils class
+[ 2026-04-03 18:26:44,578 ] INFO - root - Exited the save_object method of mainutils class 
+[ 2026-04-03 18:26:44,578 ] INFO - root - Entered the save_object method of mainutils class
+[ 2026-04-03 18:26:44,578 ] INFO - root - Exited the save_object method of mainutils class 
+[ 2026-04-03 18:26:44,578 ] INFO - root - Data transformation completed
+[ 2026-04-03 18:26:44,578 ] INFO - root - Model Trianer started
+[ 2026-04-03 18:28:14,780 ] INFO - root - Entered the save_object method of mainutils class
+[ 2026-04-03 18:28:14,812 ] INFO - root - Exited the save_object method of mainutils class 
+[ 2026-04-03 18:28:14,812 ] INFO - root - Entered the save_object method of mainutils class
+[ 2026-04-03 18:28:14,835 ] INFO - root - Exited the save_object method of mainutils class 
+[ 2026-04-03 18:28:14,835 ] INFO - root - Model trainer artifact:ModelTrainerArtifact(trianed_model_file_path='Artifacts\\04_03_2026_18_26_12\\modle_trainer\\trained_model\\model.pkl', train_metric_artifact=ClassficationMetricArtifact(f1_score=1.0, precision_score=1.0, recall_score=1.0), test_metric_artifact=ClassficationMetricArtifact(f1_score=0.9789517127527858, precision_score=0.9713349713349714, recall_score=0.9866888519134775))
+[ 2026-04-03 18:28:14,837 ] INFO - root - Model Training artifact created

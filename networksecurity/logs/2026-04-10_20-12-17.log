@@ -1,0 +1,6 @@
+[ 2026-04-10 20:12:20,021 ] INFO - httpx - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[ 2026-04-10 20:12:20,027 ] INFO - dagshub - Accessing as Shahbaz78669
+[ 2026-04-10 20:12:21,301 ] INFO - httpx - HTTP Request: GET https://dagshub.com/api/v1/repos/Shahbaz78669/networksecurity "HTTP/1.1 200 OK"
+[ 2026-04-10 20:12:22,436 ] INFO - httpx - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[ 2026-04-10 20:12:22,436 ] INFO - dagshub - Initialized MLflow to track repo "Shahbaz78669/networksecurity"
+[ 2026-04-10 20:12:22,439 ] INFO - dagshub - Repository Shahbaz78669/networksecurity initialized!
