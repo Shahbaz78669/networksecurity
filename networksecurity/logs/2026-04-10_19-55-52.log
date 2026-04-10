@@ -1,8 +1,0 @@
-[ 2026-04-10 19:55:55,319 ] INFO - httpx - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
-[ 2026-04-10 19:55:55,324 ] INFO - dagshub - Accessing as Shahbaz78669
-[ 2026-04-10 19:55:56,196 ] INFO - httpx - HTTP Request: GET https://dagshub.com/api/v1/repos/Shahbaz78669/networksecurity "HTTP/1.1 200 OK"
-[ 2026-04-10 19:55:56,905 ] INFO - httpx - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
-[ 2026-04-10 19:55:56,908 ] INFO - dagshub - Initialized MLflow to track repo "Shahbaz78669/networksecurity"
-[ 2026-04-10 19:55:56,908 ] INFO - dagshub - Repository Shahbaz78669/networksecurity initialized!
-[ 2026-04-10 19:56:15,850 ] INFO - root - File loaded. Original Shape: (12, 30)
-[ 2026-04-10 19:56:15,929 ] INFO - root - Dummy 'id' column added for schema alignment.
