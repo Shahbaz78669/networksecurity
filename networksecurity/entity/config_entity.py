@@ -10,6 +10,8 @@ class TrainingPipelineConfig:
         self.pipeline_name = training_pipeline.PIPELINE_NAME
         self.artifact_name = training_pipeline.ARTIFACT_DIR
         self.artifact_dir = os.path.join(self.artifact_name, self.timestamp)
+        self.odel_dir=os.path.join("final")
+        self.timestamp :str =timestamp
 
 '''It defines where to pull data from (MongoDB database_name and collection_name) and where to store the raw and split data (feature_store_file_path, training_file_path, testing_file_path).
 
