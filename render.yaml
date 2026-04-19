@@ -1,0 +1,39 @@
+# render.yaml — Render.com deployment configuration
+# Free tier: https://render.com/docs/free
+# Deploy steps: https://render.com/docs/deploy-an-image
+#
+# How to use:
+#   1. Sign up at https://render.com using your GitHub account
+#   2. Click "New +" > "Web Service" > "Connect a Repository"
+#   3. Select this repository and Render will auto-detect this file
+#   4. Add the environment variables listed in .env.example via the Render dashboard
+#
+services:
+  - type: web
+    name: networksecurity-api
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    # Free instance — spins down after 15 min of inactivity, spins back up on request
+    plan: free
+    envVars:
+      - key: MONGODB_URL_KEY
+        sync: false          # Set this secret in the Render dashboard
+      - key: PORT
+        value: "8080"
+      # Optional: DagShub / MLflow
+      - key: MLFLOW_TRACKING_URI
+        sync: false
+      - key: MLFLOW_TRACKING_USERNAME
+        sync: false
+      - key: MLFLOW_TRACKING_PASSWORD
+        sync: false
+      # Optional: AWS S3
+      - key: AWS_ACCESS_KEY_ID
+        sync: false
+      - key: AWS_SECRET_ACCESS_KEY
+        sync: false
+      - key: AWS_REGION
+        value: "us-east-1"
+      - key: AWS_BUCKET_NAME
+        sync: false
+    healthCheckPath: /health

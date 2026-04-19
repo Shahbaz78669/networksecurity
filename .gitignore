@@ -1,2 +1,18 @@
 venv
+.venv
 .env
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# ML artifacts (large binary files — store in S3 or DVC, not Git)
+final_model/*.pkl
+prediction_output/
+
+# MLflow local database
+mlflow.db
+
+# VS Code
+.vscode/
