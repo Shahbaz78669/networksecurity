@@ -1,7 +1,6 @@
 from datetime import datetime
 from networksecurity.constants import training_pipeline
 import os
-import sys
 
 
 class TrainingPipelineConfig:
@@ -10,12 +9,17 @@ class TrainingPipelineConfig:
         self.pipeline_name = training_pipeline.PIPELINE_NAME
         self.artifact_name = training_pipeline.ARTIFACT_DIR
         self.artifact_dir = os.path.join(self.artifact_name, self.timestamp)
-        self.odel_dir=os.path.join("final")
-        self.timestamp :str =timestamp
+        self.odel_dir = os.path.join("final")
+        self.timestamp: str = timestamp
 
-'''It defines where to pull data from (MongoDB database_name and collection_name) and where to store the raw and split data (feature_store_file_path, training_file_path, testing_file_path).
+
+'''It defines where to pull data from (MongoDB database_name and collection_name)
+and where to store the raw and split data
+(feature_store_file_path, training_file_path, testing_file_path).
 
 Key Parameter: It holds the train_test_split_ratio (defaulting to 0.2 from constants). '''
+
+
 class DataIngestionConfig:
     def __init__(self, training_pipeline_config: TrainingPipelineConfig):
         self.data_ingestion_dir: str = os.path.join(
@@ -42,7 +46,7 @@ class DataIngestionConfig:
         )
 
         self.train_test_split_ratio: float = (
-            training_pipeline.DATA_INGESTION_TRAIN_TEST_SPLIT_RATIO  
+            training_pipeline.DATA_INGESTION_TRAIN_TEST_SPLIT_RATIO
         )
 
         self.collection_name: str = (
@@ -53,7 +57,6 @@ class DataIngestionConfig:
             training_pipeline.DATA_INGESTION_DATABASE_NAME
         )
 
-import os
 
 class DataValidationConfig:
 
@@ -105,6 +108,7 @@ class DataValidationConfig:
             training_pipeline.DATA_VALIDATION_DRIFT_REPORT_FILE_NAME,
         )
 
+
 class DataTransformationConfig:
     def __init__(self, training_pipeline_config: TrainingPipelineConfig):
         self.data_transformation_dir: str = os.path.join(
@@ -129,13 +133,13 @@ class DataTransformationConfig:
 
 
 class ModeltrainerConfig:
-    def __init__(self,training_pipeline_config:TrainingPipelineConfig):
-        self.model_trainer_dir:str=os.path.join(
-            training_pipeline_config.artifact_dir,training_pipeline.MODEL_TRAINER_DIR_NAME
+    def __init__(self, training_pipeline_config: TrainingPipelineConfig):
+        self.model_trainer_dir: str = os.path.join(
+            training_pipeline_config.artifact_dir, training_pipeline.MODEL_TRAINER_DIR_NAME
         )
-        self.trained_model_file_path:str=os.path.join(
-            self.model_trainer_dir,training_pipeline.MODEL_TRAINER_TRAINED_MODEL_DIR,
+        self.trained_model_file_path: str = os.path.join(
+            self.model_trainer_dir, training_pipeline.MODEL_TRAINER_TRAINED_MODEL_DIR,
             training_pipeline.MODEL_FILE_NAME
         )
-        self.expected_accuracy:float=training_pipeline.MODEL_TRAINER_EXPECTED_SCORE
-        self.overfitting_underfitting_threshold=training_pipeline.MODEL_TRAINER_OVER_FITTING_UNDER_FITTING_THRESHOLD
+        self.expected_accuracy: float = training_pipeline.MODEL_TRAINER_EXPECTED_SCORE
+        self.overfitting_underfitting_threshold = training_pipeline.MODEL_TRAINER_OVER_FITTING_UNDER_FITTING_THRESHOLD
