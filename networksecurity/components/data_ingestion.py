@@ -77,8 +77,8 @@ class DataIngestion:
         try:
             logging.info("Splitting the data into train set and test set")
             train_set,test_set=train_test_split(dataframe,test_size=self.data_ingestion_config.train_test_split_ratio)
-            training_file_path=self.data_ingestion_config.training_dir
-            testing_file_path=self.data_ingestion_config.testing_dir
+            training_file_path=self.data_ingestion_config.train_file_path
+            testing_file_path=self.data_ingestion_config.test_file_path
             train_dir_path=os.path.dirname(training_file_path)
             test_dir_path=os.path.dirname(testing_file_path)
 
@@ -89,10 +89,10 @@ class DataIngestion:
             logging.info("Directories of test and train file path created ")
 
             train_set.to_csv(
-                self.data_ingestion_config.training_dir,index=False,header=True
+                self.data_ingestion_config.train_file_path,index=False,header=True
             )
             test_set.to_csv(
-                self.data_ingestion_config.testing_dir,index=False,header=True
+                self.data_ingestion_config.test_file_path,index=False,header=True
             )
 
             logging.info("Expoted train and test file paths")
@@ -109,7 +109,7 @@ class DataIngestion:
             dataframe=self.export_data_from_mongodb_as_dataframe()
             dataframe=self.export_data_into_feature_store(dataframe)
             self.initiate_train_test_split(dataframe)
-            data_ingestion_artifact=DataIngestionArtifact(train_file_path=self.data_ingestion_config.training_dir,test_file_path=self.data_ingestion_config.testing_dir)
+            data_ingestion_artifact=DataIngestionArtifact(train_file_path=self.data_ingestion_config.train_file_path,test_file_path=self.data_ingestion_config.test_file_path)
             return data_ingestion_artifact
 
 
