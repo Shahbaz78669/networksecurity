@@ -1,0 +1,16 @@
+[ 2026-09-05 14:37:35,615 ] 16 root - INFO - Initiate the data ingestion
+[ 2026-09-05 14:37:53,703 ] 78 root - INFO - Splitting the data into train set and test set
+[ 2026-09-05 14:37:53,709 ] 86 root - INFO - making the directories of test and train file path
+[ 2026-09-05 14:37:53,710 ] 89 root - INFO - Directories of test and train file path created 
+[ 2026-09-05 14:37:53,929 ] 98 root - INFO - Expoted train and test file paths
+[ 2026-09-05 14:37:53,930 ] 19 root - INFO - Data Initiation Completed
+[ 2026-09-05 14:37:53,941 ] 25 root - INFO - Initiate the data Validation
+[ 2026-09-05 14:37:55,066 ] 28 root - INFO - data Validation Completed
+[ 2026-09-05 14:37:55,067 ] 30 root - INFO - Data transformation Started
+[ 2026-09-05 14:37:55,072 ] 48 root - INFO - ENtered intiate data transformation 
+[ 2026-09-05 14:37:55,179 ] 34 root - INFO - Entered the data_transformation object function
+[ 2026-09-05 14:37:55,179 ] 37 root - INFO - Initialised KNNImputer with {'missing_values': nan, 'n_neighbors': 3, 'weights': 'uniform'}
+[ 2026-09-05 14:37:55,206 ] 45 root - INFO - entered the save_object method of file and main_utils folder
+[ 2026-09-05 14:37:55,212 ] 49 root - INFO - exited the save_object funtion
+[ 2026-09-05 14:37:55,212 ] 85 root - INFO - Preparing artifact
+[ 2026-09-05 14:37:55,214 ] 34 root - INFO - Data transformation Completed
